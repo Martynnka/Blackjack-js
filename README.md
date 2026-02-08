@@ -1,19 +1,47 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Blackjack Game (JavaScript)
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A simple **Blackjack game** built from scratch while learning **JavaScript, HTML, and CSS**.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+The goal of this project was to practice:
+- JavaScript logic
+- DOM manipulation
+- Conditional statements
+- Arrays and objects
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## Features
+- Start a new Blackjack game
+- Draw new cards
+- Automatic Blackjack (21) detection
+- Game-over logic when exceeding 21
+- Dynamic UI updates using JavaScript
 
-Happy Coding!
+## Tech Stack
+- HTML
+- CSS
+- JavaScript (Vanilla)
+
+## How the game works
+- The player starts with two random cards
+- Cards with value:
+  - `2–10` → face value
+  - `J, Q, K` → 10
+  - `A` → 11
+- If the total sum:
+  - is **less than 21** → player can draw a new card
+  - equals **21** → Blackjack 🎉
+  - exceeds **21** → game over
+
+## What I learned
+- How to generate random values in JavaScript
+- How to update the DOM dynamically
+- How to manage game state (`isAlive`, `hasBlackJack`)
+- How to structure simple game logic without libraries
+
+## Run locally
+Just open `index.html` in your browser.
+
+## Future improvements
+- Add betting system using player chips
+- Add dealer logic
+- Improve UI and animations
+- Add reset game button
